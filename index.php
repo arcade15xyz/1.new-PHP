@@ -3,55 +3,59 @@
     /**
      * 
      */
-    // $title = 'Learn PHP From Scratch';
-    // $heading = 'Welcome To The Course';
-    // $body = 'In this course, you will learn the fundamentals of the PHP language';
+    $title = 'Learn PHP From Scratch';
+    $heading = 'Welcome To The Course';
+    $body = 'In this course, you will learn the fundamentals of the PHP language';
 
-    //String
-    $name = 'Brad Traversy' ;
-    $name2 = 'John Doe';
+    // String
+    // $name = 'Brad Traversy' ;
+    // $name2 = 'John Doe';
 
-    var_dump($name);
-    echo '<br />';
-    echo getType($name2);
+    // var_dump($name);
+    // echo '<br />';
+    // echo getType($name2);
 
-    //Integer
-    $age = 35;
-    echo '<br />';
-    var_dump($age);
+    // //Integer
+    // $age = 35;
+    // echo '<br />';
+    // var_dump($age);
 
-    // Float 
-    $rating = 4.5;
-    var_dump($rating);
-    echo '<br />';
+    // // Float 
+    // $rating = 4.5;
+    // var_dump($rating);
+    // echo '<br />';
 
-    //Boolean
-    $isLoaded = true;
-    var_dump($isLoaded);
-    echo '<br />';
+    // //Boolean
+    // $isLoaded = true;
+    // var_dump($isLoaded);
+    // echo '<br />';
 
-    // Array
-    $friends = ['John',"Jack",'Jane'];
-    var_dump($friends);
-    echo '<br />',
+    // // Array
+    // $friends = ['John',"Jack",'Jane'];
+    // var_dump($friends);
+    // echo '<br />',
 
-    // Objects
-    $person = new stdClass();
-    var_dump($person);
-    echo '<br />';
+    // // Objects
+    // $person = new stdClass();
+    // var_dump($person);
+    // echo '<br />';
 
-    //Null
-    $car = null;
-    var_dump($car);
-    echo '<br />';
+    // //Null
+    // $car = null;
+    // var_dump($car);
+    // echo '<br />';
 
     //Resource
     // $file = fopen('sample.txt', 'r');
     // var_dump($file);
 
+    $firstName = 'John';
+    $lastName = 'Doe';
+    $fullName = $firstName . " " .$lastName;
+
     ?>
 
-    <!-- <!DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en">
     
     <head>
@@ -71,8 +75,11 @@
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-semibold mb-4"><?=$heading?></h2>
                 <p>In this course, you will learn the fundamentals of the PHP language</p>
+                <?= 'Hello my name is ' . $fullName . '<br/>' ?>
+                <?= "Hello my name is $fullName" ?>
+                <?= 'Hello my name is \'John\'' ?>
             </div>
         </div>
     </body>
     
-    </html> -->
+    </html>
