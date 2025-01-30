@@ -134,37 +134,79 @@
 // //number_format()
 // $output = number_format(1234567.191234,2,'.',',');
 
+// $output = null;
+// $string = 'Hello world';
+
+// //strlen
+// $output = strlen($string);
+
+// //str_word_count
+// $output = str_word_count($string);
+
+// // strpos
+// $output = strpos($string,'world');
+
+// //Get specific char by index
+// $output = $string[4];
+
+// //substr
+// $output = substr($string,6,5);
+
+// // str_repalce()
+// $output= str_replace('world','Universe',$string);
+
+// //strtoupper
+// $output = strtoupper($string);
+
+// //strtolower
+// $output = strtolower($string);
+
+// //ucwords
+// $output = ucwords($string);
+
+// $output = trim('    Hello World   ');
+
+
+
+
+
+//Dates and Timers
+
 $output = null;
-$string = 'Hello world';
 
-//strlen
-$output = strlen($string);
+//get year
+$output = date('Y');
 
-//str_word_count
-$output = str_word_count($string);
+//get year with timestamp
+$output = date('Y',902030111);
 
-// strpos
-$output = strpos($string,'world');
+//get timestamp from strtotime
+$output = date('Y',strtotime('2001-10-16'));
 
-//Get specific char by index
-$output = $string[4];
+//get month
+$output = date ('m');
 
-//substr
-$output = substr($string,6,5);
+//get day
+$output = date('D');
+$output = date('l');
 
-// str_repalce()
-$output= str_replace('world','Universe',$string);
+//full date
+$output = date('Y-m-d');
 
-//strtoupper
-$output = strtoupper($string);
+//get hour
+$output = date('h');
 
-//strtolower
-$output = strtolower($string);
+//get min
+$output = date('i');
 
-//ucwords
-$output = ucwords($string);
+//get second
+$output = date('s');
 
-$output = trim('    Hello World   ');
+//get am/pm
+$output = date('a');
+
+//put it all together
+$output = date('Y-m-d h:i:s a');
 
 ?>
 <!DOCTYPE html>
