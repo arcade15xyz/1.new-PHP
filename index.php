@@ -85,55 +85,86 @@
 
 
 
-//
-<?php
-/*
-| Arithmetic Operators
-| Operator | Description    |
-| -------- | -------------- |
-| `+`      | Addition       |
-| `-`      | Subtraction    |
-| `*`      | Multiplication |
-| `/`      | Division       |
-| `%`      | Modulus        |
-*/
+ <?php
+// /*
+// | Arithmetic Operators
+// | Operator | Description    |
+// | -------- | -------------- |
+// | `+`      | Addition       |
+// | `-`      | Subtraction    |
+// | `*`      | Multiplication |
+// | `/`      | Division       |
+// | `%`      | Modulus        |
+// */
+
+// $output = null;
+// $num1 = 20;
+// $num2 = 10;
+
+// $output = '$num1 + $num2 = ' . $num1 + $num2 ;
+
+// $output = rand();
+// $output = getrandmax();
+// $output = rand (1,10);
+
+// // round ()
+// $output = round(4.7);
+
+// //ceil
+// $output = ceil(4.2);
+
+// //floor()
+// $output = floor(4.9);
+
+// //sqrt() 
+// $output = sqrt(64);
+
+// //pi()
+// $output = pi();
+
+// //abs()
+// $output = abs(-4.7);
+
+// //max()
+// $output = max(1,24,2,5);
+
+// //min()
+// $output = min(1,24,2,5);
+
+// //number_format()
+// $output = number_format(1234567.191234,2,'.',',');
 
 $output = null;
-$num1 = 20;
-$num2 = 10;
+$string = 'Hello world';
 
-$output = '$num1 + $num2 = ' . $num1 + $num2 ;
+//strlen
+$output = strlen($string);
 
-$output = rand();
-$output = getrandmax();
-$output = rand (1,10);
+//str_word_count
+$output = str_word_count($string);
 
-// round ()
-$output = round(4.7);
+// strpos
+$output = strpos($string,'world');
 
-//ceil
-$output = ceil(4.2);
+//Get specific char by index
+$output = $string[4];
 
-//floor()
-$output = floor(4.9);
+//substr
+$output = substr($string,6,5);
 
-//sqrt() 
-$output = sqrt(64);
+// str_repalce()
+$output= str_replace('world','Universe',$string);
 
-//pi()
-$output = pi();
+//strtoupper
+$output = strtoupper($string);
 
-//abs()
-$output = abs(-4.7);
+//strtolower
+$output = strtolower($string);
 
-//max()
-$output = max(1,24,2,5);
+//ucwords
+$output = ucwords($string);
 
-//min()
-$output = min(1,24,2,5);
-
-//number_format()
-$output = number_format(1234567.191234,2,'.',',');
+$output = trim('    Hello World   ');
 
 ?>
 <!DOCTYPE html>
@@ -162,7 +193,7 @@ $output = number_format(1234567.191234,2,'.',',');
   </div>
 </body>
 
-</html>
+</html> 
 
 
 
