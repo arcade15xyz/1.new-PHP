@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
     // a comment
     /**
      * 
      */
-    $title = 'Learn PHP From Scratch';
-    $heading = 'Welcome To The Course';
-    $body = 'In this course, you will learn the fundamentals of the PHP language';
+    // $title = 'Learn PHP From Scratch';
+    // $heading = 'Welcome To The Course';
+    // $body = 'In this course, you will learn the fundamentals of the PHP language';
 
     // String
     // $name = 'Brad Traversy' ;
@@ -49,13 +49,163 @@
     // $file = fopen('sample.txt', 'r');
     // var_dump($file);
 
-    $firstName = 'John';
-    $lastName = 'Doe';
-    $fullName = $firstName . " " .$lastName;
+    // $firstName = 'John';
+    // $lastName = 'Doe';
+    // $fullName = $firstName . " " .$lastName;
 
-    ?>
 
-    <!DOCTYPE html>
+
+    $number1 = 5;
+    $number2 = 10;
+    $number3 = '20';
+    $fruit = 'apple';
+    $bool1 = true;
+    $bool2 = false;
+    $null = null;
+
+    //Implicit Conversion
+    $result = $number1 + $number2;
+    $result = $number1 + $number3; //int (string to int)
+    $result = $number3 + $number3; // int (string to int)
+    $result = $number1 . $number2; // string (int to string)
+    // $result = $fruit . $number2; // error
+    $result = $number1 + $bool1; // int (bool to int)
+    $result = $number1 + $bool2; //int bool to int
+    $result = $number1 + $null; // int (null to int)
+
+    //Explicit conversion
+    $result = (string) $number1;
+    $result = (int) $number3;
+    $result = (bool) $number1;
+
+    var_dump($result);
+    ?> -->
+
+
+
+
+
+//
+<?php
+/*
+| Arithmetic Operators
+| Operator | Description    |
+| -------- | -------------- |
+| `+`      | Addition       |
+| `-`      | Subtraction    |
+| `*`      | Multiplication |
+| `/`      | Division       |
+| `%`      | Modulus        |
+*/
+
+$output = null;
+$num1 = 20;
+$num2 = 10;
+
+$output = '$num1 + $num2 = ' . $num1 + $num2 ;
+
+$output = rand();
+$output = getrandmax();
+$output = rand (1,10);
+
+// round ()
+$output = round(4.7);
+
+//ceil
+$output = ceil(4.2);
+
+//floor()
+$output = floor(4.9);
+
+//sqrt() 
+$output = sqrt(64);
+
+//pi()
+$output = pi();
+
+//abs()
+$output = abs(-4.7);
+
+//max()
+$output = max(1,24,2,5);
+
+//min()
+$output = min(1,24,2,5);
+
+//number_format()
+$output = number_format(1234567.191234,2,'.',',');
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>PHP From Scratch</title>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-semibold">PHP From Scratch</h1>
+    </div>
+  </header>
+  <div class="container mx-auto p-4 mt-4">
+    <div class="bg-white rounded-lg shadow-md p-6 mt-6">
+      <!-- Output -->
+       <p class="text-xl">
+        <?= $output ?>
+       </p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <!DOCTYPE html>
     <html lang="en">
     
     <head>
@@ -82,4 +232,4 @@
         </div>
     </body>
     
-    </html>
+    </html> -->
